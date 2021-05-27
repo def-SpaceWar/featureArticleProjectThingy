@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to make a very simple graphics talking in Go! Begginer's Tutorial!</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>How to make graphics in Go! Begginer's Tutorial</h1>
+
+  <p>Coding is an essential skill in life which can improve your logic in many ways. Im this article you will learn how
+    to code and make your own functional graphics program.</p>
+
+  <h2>How do I get started in coding Go?</h2>
+
+  <p>Go is a simple language but at the same time with many low level concepts which we will go through carefully to
+    make sure you understand. You need a text editor to code. A text editor is a program that lets you edit text files
+    like code, lists, commands, and all sorts of other stuff.
+    <br />
+    <br />
+    Learning how to download it will be broken up into 3 parts. The installation for Windows/Mac and Linux. You
+    should read the installation guide for which OS you are on.
+  </p>
+
+  <button onclick="windowsInstall()">Windows/Mac Guide</button>
+  <button onclick="linuxInstall()">Linux Guide</button>
+  <p id="installation_guide">
+    Windows/Mac:
+    <br />
+    Go to <a href="https://code.visualstudio.com" target="blank">code.visualstudio.com</a>
+    <br />
+    Then press the download button
+    <br />
+    When you are done downloading the file, run the installer
+    <br />
+  </p>
+
+  <script>
+    let windowsText = document.getElementById("installation_guide").innerHTML;
+
+    function windowsInstall() {
+      document.getElementById("installation_guide").innerHTML = windowsText;
+    }
+
+    function linuxInstall() {
+      document.getElementById("installation_guide").innerHTML = `
+      <strong>Arch:</strong> <br />
+      Go to terminal and type the following commands:
+      <br />
+      <code>
+      sudo pacman -Syyu yay
+      <br />
+      yay -Syyu visual-studio-code-bin go</code>
+
+      <br />
+
+      If you use another distro figure it out.
+      `;
+    }
+  </script>
+</body>
+
+</html>

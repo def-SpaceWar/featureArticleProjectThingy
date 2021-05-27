@@ -1,0 +1,33 @@
+:root {
+  background-color: #dfdfdf;
+}
+
+body {
+  background-color: #efefef;
+  padding: 15px;
+  margin: 15px;
+  font-family: Verdana, Arial;
+}
+
+p {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+code {
+  background-color: #1f2f3f;
+  color: #edc;
+  font-size: 125%;
+  font-family: "Consolas", "Inconsolata", "FixedSys", "Courier New", monospace;
+  padding: 5px;
+  margin: 5px;
+  display: block;
+  width: 25%;
+}
